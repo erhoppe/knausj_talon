@@ -140,7 +140,7 @@ formatters_dict = {
         NOSEP, 
         lambda i, word, _: 
         "'" + word + "'" if i == 0 else ", " + "'" + word + "'"
-        )
+        ),
      "COMMA_SEP_LIST": (
         NOSEP, 
         lambda i, word, _: 
