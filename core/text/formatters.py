@@ -144,7 +144,7 @@ formatters_dict = {
      "COMMA_SEP_LIST": (
         NOSEP, 
         lambda i, word, _: 
-        word if i == 0 else ", " word
+        word if i == 0 else ", " + word
         )
           
 }
