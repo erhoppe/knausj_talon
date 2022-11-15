@@ -141,6 +141,11 @@ formatters_dict = {
         lambda i, word, _: 
         "'" + word + "'" if i == 0 else ", " + "'" + word + "'"
         )
+     "COMMA_SEP_LIST": (
+        NOSEP, 
+        lambda i, word, _: 
+        word if i == 0 else ", " word
+        )
           
 }
 
@@ -163,6 +168,7 @@ formatters_words = {
     "sing string": formatters_dict["SINGLE_QUOTED_STRING"],
     "title": formatters_dict["CAPITALIZE_ALL_WORDS"],
     "list it": formatters_dict["QUOTED_LIST"],
+    "columns": formatters_dict["COMMA_SEP_LIST"],
     "data table": formatters_dict["BRADLEY_TABLE"]
 }
 
