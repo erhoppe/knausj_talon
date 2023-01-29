@@ -10,8 +10,8 @@ dub arrow: "=>"
 new line: "\\n"
 carriage return: "\\r"
 line feed: "\\r\\n"
-empty dubstring: user.insert_between('"', '"')
-empty escaped (dubstring | dub quotes): user.insert_between('\\"', '\\"')
+empty dub string: user.insert_between('"', '"')
+empty escaped (dub string | dub quotes): user.insert_between('\\"', '\\"')
 empty string: user.insert_between("'", "'")
 empty escaped string: user.insert_between("\\'", "\\'")
 (inside parens | args): user.insert_between("(", ")")
@@ -39,7 +39,7 @@ percent that:
 quote that:
     text = edit.selected_text()
     user.paste("'{text}'")
-(double quote | dubquote) that:
+(double quote | dub quote) that:
     text = edit.selected_text()
     user.paste('"{text}"')
 (grave | back tick) that:

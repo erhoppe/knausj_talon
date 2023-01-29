@@ -40,6 +40,7 @@ copy output:
 
 
 go <user.system_path>: insert('cd "{system_path}"\n')
+path <user.system_path>: insert('"{system_path}"')
 clear screen: user.terminal_clear_screen()
 run last: user.terminal_run_last()
 rerun [<user.text>]: user.terminal_rerun_search(text or "")
