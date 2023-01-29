@@ -64,7 +64,9 @@ ctx.lists["user.code_common_function"] = {
     "vee table": "vtable",
     "view": "View",
     # dplyr
+    "all": "all",
     "anti join": "anti_join",
+    "any": "any",
     "arrange": "arrange",
     "as tibble": "as_tibble",
     "bind rows": "bind_rows",

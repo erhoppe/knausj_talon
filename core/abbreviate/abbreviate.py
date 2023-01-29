@@ -38,6 +38,7 @@ abbreviations = {
     "centimeter": "cm",
     "char": "chr",
     "character": "char",
+    "chromosome": "chr",
     "class": "cls",
     "client": "cli",
     "command": "cmd",
