@@ -121,6 +121,7 @@ formatters_dict = {
     "ALL_LOWERCASE": (SEP, every_word(lambda w: w.lower())),
     "DOUBLE_QUOTED_STRING": (SEP, surround('"')),
     "SINGLE_QUOTED_STRING": (SEP, surround("'")),
+    "TICK_QUOTED_STRING": (SEP, surround("`")),
     "SPACE_SURROUNDED_STRING": (SEP, surround(" ")),
     "DOT_SEPARATED": words_with_joiner("."),
     "BRADLEY_TABLE": (
@@ -169,7 +170,8 @@ formatters_words = {
     "title": formatters_dict["CAPITALIZE_ALL_WORDS"],
     "list it": formatters_dict["QUOTED_LIST"],
     "columns": formatters_dict["COMMA_SEP_LIST"],
-    "data table": formatters_dict["BRADLEY_TABLE"]
+    "data table": formatters_dict["BRADLEY_TABLE"],
+    "are string": formatters_dict["TICK_QUOTED_STRING"]
 }
 
 all_formatters = {}
