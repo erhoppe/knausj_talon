@@ -1,8 +1,4 @@
-mode: command
-and mode: user.batch
-mode: command
-and mode: user.auto_lang
-and code.language: batch
+code.language: batch
 -
 tag(): user.code_comment_line
 
