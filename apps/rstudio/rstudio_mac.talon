@@ -128,10 +128,9 @@ run git commit: key("ctrl-alt-m")
 
 
 # random QOL
-set as:  = 
-subtract:  - 
-add:  + 
-assign that:                     key(alt--)
+set as: " = "
+subtract: " - "
+add: "  + "
 
 # text selection/navigation
 paint <user.arrow_key>:          key(shift-{arrow_key})
@@ -158,10 +157,6 @@ move line down:                  key(alt-down)
 push that:                       key(ctrl-y) #inserts currently yanked text
 
 jump to:                         key(cmd-shift-opt-j) #section/function navigator
-add cursor up:                   key(ctrl-alt-up)
-add cursor down:                 key(ctrl-alt-down)
-move active cursor up:           key(ctrl-alt-shift-up)
-move active cursor down:         key(ctrl-alt-shift-down)
 split that:                      key(ctrl-alt-a) # multi cursors split into lines.
 
 extract as (function|funk):      key(cmd-alt-x)
@@ -175,8 +170,6 @@ find text <user.text>:
     key(cmd-f)
     insert(text or "")
 find that:                       key(cmd-e) #find selected text
-find next:                       key(cmd-g)
-find previous:                   key(cmd-shift-g)
 replace those:                   key(cmd-shift-j)
 # theoretically you're supposed to be able to select in selection
 # in the finder but it's not working for me; 
@@ -205,15 +198,10 @@ session force kill:              key(ctrl-shift-c) ## Custom shortcut
 session new:                     key(ctrl-shift-n) 
 session quit:                    key(cmd-q)
 session restart:                 key(cmd-shift-f10)
-zoom source:                     key(ctrl-shift-1)
 (zoom|show) all:                 key(ctrl-shift-0)
 
 # termal stuff
 terminal new:                    key(shift-alt-t)
-
-#help/definitions
-help that:                       key(f1)
-define that:                     key(f2)
 
 #plots
 plot (previous|back|pree):       key(cmd-alt-f11)
@@ -226,27 +214,6 @@ clear current terminal:        key(ctrl-shift-l)
 terminal previous:             key(ctrl-alt-f11)
 terminal next:                 key(ctrl-alt-f12)
 send to terminal:              key(cmd-alt-enter) #send current line
-
-# devtools, package development, and session management
-dev tools build:                 key(cmd-shift-b)
-dev tools load all:              key(cmd-shift-l)
-dev tools test:                  key(cmd-shift-t)
-dev tools check:                 key(cmd-shift-e)
-dev tools document:              key(cmd-shift-d)
-
-# Debugging
-toggle breakpoint:               key(shift-f9)
-debug next:                      key(f10)
-debug step into (function|funk): key(shift-f4)
-debug finish (function|funk):    key(shift-f6)
-debug continue:                  key(shift-f5)
-debug stop:                      key(shift-f8)
-
-# Git/SVN
-run git diff:                    key(ctrl-alt-d)
-run git commit:                  key(ctrl-alt-m)
-
-# 
 
 # Other shortcuts that could be enabled
 # run line and stay:             key(alt-enter)
