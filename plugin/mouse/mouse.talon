@@ -1,8 +1,8 @@
-mouser: user.mouse_toggle_control_mouse()
-#control mouse: user.mouse_toggle_control_mouse()
-zoom mouse: user.mouse_toggle_zoom_mouse()
-camera overlay: user.mouse_toggle_camera_overlay()
-run calibration: user.mouse_calibrate()
+mouser: tracking.control_toggle()
+control mouse: tracking.control_toggle()
+zoom mouse: tracking.control_zoom_toggle()
+camera overlay: tracking.control_debug_toggle()
+run calibration: tracking.calibrate()
 touch:
     mouse_click(0)
     # close the mouse grid if open
@@ -40,12 +40,12 @@ mid click:
 	key("{modifiers}:up")
 	# close the mouse grid
 	user.grid_close()
-(dubclick | duke): 
+(dub click | duke): 
 	mouse_click()
 	mouse_click()
 	# close the mouse grid
 	user.grid_close()
-(tripclick | triplick): 
+(trip click | trip lick): 
 	mouse_click()
 	mouse_click()
 	mouse_click()
