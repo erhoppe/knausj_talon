@@ -152,6 +152,7 @@ class Actions:
         if button_down:
             ctrl.mouse_click(button=0, up=True)
 
+# Used for my foot pedal
     def smooth_wheel_scroll(direction: str):
         """Scrolls small amount smoothly"""
         pixels = 15
