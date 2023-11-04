@@ -3,9 +3,9 @@ app: RStudio
 -
 
 # random QOL
-set as:  = 
-subtract:  - 
-add:  + 
+set as: " = "
+subtract: " - "
+add: " + " 
 assign that:                     key(alt--)
 pipe that:                       key(cmd-shift-m)
 
@@ -22,19 +22,22 @@ run next chunk:                  key(cmd-alt-n)
 run all:                         key(cmd-shift-s)
 run knitter:                     key(cmd-shift-k)
 run profiler:                    key(cmd-shift-alt-p)
-run again:                       key(cmd-alt-p) #re-run prev region
+#re-run prev region
+run again:                       key(cmd-alt-p) 
 
 # text selection/navigation
 paint <user.arrow_key>:          key(shift-{arrow_key})
-select that:                     key(cmd-alt-shift-m) # selects whole symbol; if number/math symbol, etc. moves to left
+# selects whole symbol; if number/math symbol, etc. moves to left
+select that:                     key(cmd-alt-shift-m) 
 select (inside|args):      key(ctrl-shift-e)
 matching (brace|paren):          key(ctrl-p)
 expand select:                   key(shift-alt-cmd-up)
 shrink select:                   key(shift-alt-cmd-down)
 
-navigate|jump) back:             key(cmd-f9)
+(navigate|jump) back:             key(cmd-f9)
 (navigate|jump) forward:         key(cmd-f10)
-indent that:                     key(cmd-i) #auto-indent, just use tab for normal indents
+#auto-indent, just use tab for normal indents
+indent that:                     key(cmd-i) 
 indent remove:                   key(shift-tab)
 go line up:                      key(alt-up)
 go line down:                    key(alt-down)
@@ -44,21 +47,27 @@ go line number:                  key(cmd-shift-alt-g)
 move line up:                    key(alt-up)
 move line down:                  key(alt-down) 
 
-(copy|yank) before:              key(ctrl-u) # yanks line up to cursor
-(copy|yank) after:               key(ctrl-k) #yanks line after cursor
-push that:                       key(ctrl-y) #inserts currently yanked text
+# yanks line up to cursor
+(copy|yank) before:              key(ctrl-u) 
+#yanks line after cursor
+(copy|yank) after:               key(ctrl-k) 
+#inserts currently yanked text
+push that:                       key(ctrl-y) 
 
-jump to:                         key(cmd-shift-opt-j) #section/function navigator
+#section/function navigator
+jump to:                         key(cmd-shift-opt-j) 
 add cursor up:                   key(ctrl-alt-up)
 add cursor down:                 key(ctrl-alt-down)
 move active cursor up:           key(ctrl-alt-shift-up)
 move active cursor down:         key(ctrl-alt-shift-down)
-split that:                      key(ctrl-alt-a) # multi cursors split into lines.
+# multi cursors split into lines.
+split that:                      key(ctrl-alt-a) 
 
 extract as (function|funk):      key(cmd-alt-x)
 extract as (variable|var):       key(cmd-alt-v)
 
-section new:                     key(cmd-shift-r) #section header
+#section header
+section new:                     key(cmd-shift-r) 
 
 # folding
 fold that:                       key(cmd-alt-l)
@@ -71,7 +80,8 @@ finder:                          key(cmd-f)
 find text <user.text>:
     key(cmd-f)
     insert(text or "")
-find that:                       key(cmd-e) #find selected text
+#find selected text
+find that:                       key(cmd-e) 
 find next:                       key(cmd-g)
 find previous:                   key(cmd-shift-g)
 replace those:                   key(cmd-shift-j)
@@ -88,8 +98,9 @@ format that:                     key(ctrl-shift-a)
 # delete
 delete line:                     key(cmd-d)
 delete word left:                key(alt-backspace)
-delete word right:               key(alt-delete))
-delete after:                    key(ctrl-k) #delete to end of line
+delete word right:               key(alt-delete)
+#delete to end of line
+delete after:                    key(ctrl-k) 
 insert knitter chunk:            key(cmd-alt-i)
 
 # panel/tab navigation
@@ -115,12 +126,14 @@ tab last:                        key(ctrl-shift-f12)
 tab new:                         key(cmd-shift-n) 
 (tab|file) save:                 key(cmd-s)
 tab save all:                    key(cmd-alt-s)
-tab save as:                     key(cmd-shift-s) ## Custom shortcut
+## Custom shortcut
+tab save as:                     key(cmd-shift-s) 
 tab close all:                   key(cmd-shift-w)
 file open:                       key(cmd-o)
 
 # session
-session force kill:              key(ctrl-shift-c) ## Custom shortcut
+## Custom shortcut
+session force kill:              key(ctrl-shift-c) 
 session new:                     key(ctrl-shift-n) 
 session quit:                    key(cmd-q)
 session restart:                 key(cmd-shift-f10)
@@ -137,14 +150,17 @@ define that:                     key(f2)
 #plots
 plot (previous|back|pree):       key(cmd-alt-f11)
 plot next:                       key(cmd-alt-f12)
-plot save:                       key(ctrl-alt-shift-s) ## Custom shortcut
+## Custom shortcut
+plot save:                       key(ctrl-alt-shift-s) 
 
 # terminal
 rename current terminal:       key(shift-alt-r)
 clear current terminal:        key(ctrl-shift-l)
 terminal previous:             key(ctrl-alt-f11)
 terminal next:                 key(ctrl-alt-f12)
-send to terminal:              key(cmd-alt-enter) #send current line
+#send current line
+send to terminal:              key(cmd-alt-enter) 
+
 
 # devtools, package development, and session management
 dev tools build:                 key(cmd-shift-b)
