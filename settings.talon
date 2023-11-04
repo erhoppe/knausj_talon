@@ -22,10 +22,10 @@ settings():
     # 0 = off
     # 1 = on with eyetracker but not zoom mouse mode
     # 2 = on but not with zoom mouse mode
-    user.mouse_enable_pop_click = 1
+    user.mouse_enable_pop_click = 2
 
     # Enable if you like to use the hissing noise to do mouse scroll
-    user.mouse_enable_hiss_scroll = 0
+    user.mouse_enable_hiss_scroll = 1
 
     # When enabled, the 'Scroll Mouse' GUI will not be shown.
     user.mouse_hide_mouse_gui = 0
@@ -34,7 +34,7 @@ settings():
     user.mouse_wake_hides_cursor = 0
 
     # The amount to scroll up/down (equivalent to mouse wheel on Windows by default)
-    user.mouse_wheel_down_amount = 120
+    user.mouse_wheel_down_amount = 96
 
     # The amount to scroll left/right
     user.mouse_wheel_horizontal_amount = 40
