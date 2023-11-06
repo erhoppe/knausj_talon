@@ -34,6 +34,9 @@ settings():
     user.mouse_wake()
     user.history_enable()
     user.talon_mode()
+    user.connect_ocr_eye_tracker()
 
 ^(talon wake)+$: speech.enable()
-^(jolt)+$: speech.enable()
+^(jolt)+$: 
+    speech.enable()
+    user.connect_ocr_eye_tracker()

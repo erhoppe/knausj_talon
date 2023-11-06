@@ -22,8 +22,11 @@ mode: dictation
     user.mouse_sleep()
     speech.disable()
     user.engine_sleep()
+    user.disconnect_ocr_eye_tracker()
 
 ^talon sleep [<phrase>]$: speech.disable()
 
-^drowse [<phrase>]$: speech.disable()
+^drowse [<phrase>]$: 
+    speech.disable()
+    user.disconnect_ocr_eye_tracker()
 
